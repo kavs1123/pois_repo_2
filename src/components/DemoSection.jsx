@@ -9,10 +9,9 @@ import PA7Demo from './demos/PA7Demo.jsx';
 import PA8Demo from './demos/PA8Demo.jsx';
 import PA9Demo from './demos/PA9Demo.jsx';
 import PA10Demo from './demos/PA10Demo.jsx';
-import PA11Demo from './demos/PA11Demo.jsx';
-import PA12Demo from './demos/PA12Demo.jsx';
-import PA13Demo from './demos/PA13Demo.jsx';
-import PA14Demo from './demos/PA14Demo.jsx';
+import PA15Demo from './demos/PA15Demo.jsx';
+import PA16Demo from './demos/PA16Demo.jsx';
+import PA17Demo from './demos/PA17Demo.jsx';
 import StubDemo from './demos/StubDemo.jsx';
 import { PA_DEMOS } from '../data/reductions.js';
 
@@ -27,10 +26,9 @@ const DEMO_TABS = [
   { id: 8, label: 'PA#8 CRHF' },
   { id: 9, label: 'PA#9 Birthday' },
   { id: 10, label: 'PA#10 HMAC' },
-  { id: 11, label: 'PA#11 DH Exchange' },
-  { id: 12, label: 'PA#12 RSA' },
-  { id: 13, label: 'PA#13 Miller-Rabin' },
-  { id: 14, label: 'PA#14 CRT & Håstad' },
+  { id: 15, label: 'PA#15 Signatures' },
+  { id: 16, label: 'PA#16 ElGamal' },
+  { id: 17, label: 'PA#17 CCA PKC' },
 ];
 
 export default function DemoSection({ activeDemo, onDemoChange, foundation, keyHex }) {
@@ -70,10 +68,9 @@ function renderDemo(id, foundation, keyHex) {
     case 8: return <PA8Demo />;
     case 9: return <PA9Demo />;
     case 10: return <PA10Demo />;
-    case 11: return <PA11Demo />;
-    case 12: return <PA12Demo />;
-    case 13: return <PA13Demo />;
-    case 14: return <PA14Demo />;
+    case 15: return <PA15Demo />;
+    case 16: return <PA16Demo />;
+    case 17: return <PA17Demo />;
     default:
       return <StubDemo pa={id} title={info?.title || `PA#${id}`} description={info?.description || 'Not implemented yet.'} />;
   }
