@@ -125,7 +125,8 @@ export const PA_DEMOS = {
   8: { title: 'PA#8: DLP CRHF', description: 'DLP-based compression + full CRHF with collision demo.' },
   9: { title: 'PA#9: Birthday Attack', description: 'Collision finding vs. theoretical birthday bound.' },
   10: { title: 'PA#10: HMAC', description: 'HMAC vs. length-extension + Encrypt-then-HMAC.' },
-  15: { title: 'PA#15: Digital Signatures', description: 'RSA hash-then-sign, raw RSA forgery, EUF-CMA oracle.' },
-  16: { title: 'PA#16: ElGamal', description: 'Enc/Dec, malleability, IND-CPA large vs tiny q, CCA discussion.' },
-  17: { title: 'PA#17: CCA PKC', description: 'Encrypt-then-Sign signcryption; verify-then-decrypt; oracle rejects tampering.' },
+  11: { title: 'PA#11: DH Key Exchange', description: 'Live DH exchange, MITM attack demo, CDH hardness brute-force, and safe prime generation.' },
+  12: { title: 'PA#12: Textbook RSA + PKCS#1 v1.5', description: 'RSA keygen, determinism attack, PKCS#1 padding visualizer, and Bleichenbacher CCA2 attack.' },
+  13: { title: 'PA#13: Miller-Rabin Primality', description: 'Probabilistic primality testing, Carmichael number demo, prime generation, and performance benchmark.' },
+  14: { title: 'PA#14: CRT & Håstad Broadcast Attack', description: 'CRT solver, Garner\'s 4× RSA speedup, and Håstad broadcast attack with PKCS padding defeat.' },
 };
