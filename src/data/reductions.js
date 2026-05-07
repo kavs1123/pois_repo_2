@@ -128,4 +128,7 @@ export const PA_DEMOS = {
   15: { title: 'PA#15: Digital Signatures', description: 'RSA hash-then-sign, raw RSA forgery, EUF-CMA oracle.' },
   16: { title: 'PA#16: ElGamal', description: 'Enc/Dec, malleability, IND-CPA large vs tiny q, CCA discussion.' },
   17: { title: 'PA#17: CCA PKC', description: 'Encrypt-then-Sign signcryption; verify-then-decrypt; oracle rejects tampering.' },
+  18: { title: 'PA#18: Oblivious Transfer', description: 'Bellare–Micali 1-out-of-2 OT over the PA#16 ElGamal group; receiver learns m_b, sender learns nothing about b.' },
+  19: { title: 'PA#19: Secure boolean gates', description: 'Secure AND from PA#18 OT; free XOR via additive masking; local NOT — functionally complete basis.' },
+  20: { title: 'PA#20: All 2-Party MPC', description: 'GMW circuit evaluator over PA#19 gates; Millionaire’s, equality, n-bit addition test circuits.' },
 };
