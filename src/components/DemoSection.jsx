@@ -12,6 +12,9 @@ import PA10Demo from './demos/PA10Demo.jsx';
 import PA15Demo from './demos/PA15Demo.jsx';
 import PA16Demo from './demos/PA16Demo.jsx';
 import PA17Demo from './demos/PA17Demo.jsx';
+import PA18Demo from './demos/PA18Demo.jsx';
+import PA19Demo from './demos/PA19Demo.jsx';
+import PA20Demo from './demos/PA20Demo.jsx';
 import StubDemo from './demos/StubDemo.jsx';
 import { PA_DEMOS } from '../data/reductions.js';
 
@@ -29,6 +32,9 @@ const DEMO_TABS = [
   { id: 15, label: 'PA#15 Signatures' },
   { id: 16, label: 'PA#16 ElGamal' },
   { id: 17, label: 'PA#17 CCA PKC' },
+  { id: 18, label: 'PA#18 OT' },
+  { id: 19, label: 'PA#19 Secure Gates' },
+  { id: 20, label: 'PA#20 MPC' },
 ];
 
 export default function DemoSection({ activeDemo, onDemoChange, foundation, keyHex }) {
@@ -71,6 +77,9 @@ function renderDemo(id, foundation, keyHex) {
     case 15: return <PA15Demo />;
     case 16: return <PA16Demo />;
     case 17: return <PA17Demo />;
+    case 18: return <PA18Demo />;
+    case 19: return <PA19Demo />;
+    case 20: return <PA20Demo />;
     default:
       return <StubDemo pa={id} title={info?.title || `PA#${id}`} description={info?.description || 'Not implemented yet.'} />;
   }
